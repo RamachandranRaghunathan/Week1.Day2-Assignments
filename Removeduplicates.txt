@@ -1,0 +1,27 @@
+package week1.day1;
+
+public class Removeduplicates {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+     String s1="We learn java basics as part of java sessions in java week1";
+     String[] S2=s1.split(" ");
+     int lengthofs1 = S2.length;
+     int count =0;
+     for (int i=0; i<lengthofs1;i++) {
+    	 for (int j=i+1; j<lengthofs1; j++) {
+    		 if(S2[i].equalsIgnoreCase(S2[j])) {
+    			 count++;
+    			 if(count>1) {
+    				 S2[i]="";
+    				 
+    			 }
+    		 }
+    	 }
+     System.out.print(S2[i]+"\t");
+     }
+     
+
+	}
+
+}
